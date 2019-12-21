@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import './messages/App.css';
-import Messages from './messages/Messages'
-import TheDate from './State/TheDate'
 import Counter from './State/Counter'
 import HelloWorld from './state-drills/helloWorld'
+import Bomb from './state-drills/bomb'
+import RouletteGun from './state-drills/rouletteGun'
+
 
 
 class App extends Component {
@@ -11,11 +12,10 @@ class App extends Component {
     return (
       <div className="App">
         <h1>YOUR APPLICATION NAME!</h1>
-        <Messages name="Messages" unread={0}/>
-        <Messages name="Notifications" unread={10}/>
-        <TheDate />
         <Counter count={123}/>
         <HelloWorld />
+        <Bomb />
+        <RouletteGun />
       </div>
     );
   }
