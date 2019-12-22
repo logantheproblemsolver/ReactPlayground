@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion Component only opens one section at a time 1`] = `
+<ul>
+  <li
+    key="0"
+  >
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Title1
+    </button>
+  </li>
+  <li
+    key="1"
+  >
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Title2
+    </button>
+  </li>
+  <li
+    key="2"
+  >
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Title3
+    </button>
+    <p>
+      Content3
+    </p>
+  </li>
+  <li
+    key="3"
+  >
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Title4
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`Accordion Component opens any clicked section 1`] = `
+<ul>
+  <li
+    key="0"
+  >
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Title1
+    </button>
+  </li>
+  <li
+    key="1"
+  >
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Title2
+    </button>
+    <p>
+      Content2
+    </p>
+  </li>
+  <li
+    key="2"
+  >
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Title3
+    </button>
+  </li>
+  <li
+    key="3"
+  >
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Title4
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`Accordion Component renders empty given no Accordion without errors 1`] = `<ul />`;

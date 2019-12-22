@@ -1,21 +1,32 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './messages/App.css';
-import Counter from './State/Counter'
-import HelloWorld from './state-drills/helloWorld'
-import Bomb from './state-drills/bomb'
-import RouletteGun from './state-drills/rouletteGun'
+import Accordion from './state-drills/Accordion';
 
 
+const section = [
+  {
+    title: 'Title1',
+    content: 'Content1',
+  },
+  {
+    title: 'Title2',
+    content: 'Content2',
+  },
+  {
+    title: 'Title3',
+    content: 'Content3',
+  },
+  {
+    title: 'Title4',
+    content: 'Content4'
+  }
+]
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>YOUR APPLICATION NAME!</h1>
-        <Counter count={123}/>
-        <HelloWorld />
-        <Bomb />
-        <RouletteGun />
+        <Accordion section={section}/>
       </div>
     );
   }
